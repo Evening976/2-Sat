@@ -15,59 +15,59 @@ public class Tester {
         List<List<Integer>> scc = graph.findStronglyConnectedComponents();
         return Sat.checkSat(scc);
     }
-    
+
     @Test
     public void testSat6() {
-        assertTrue(check("src/sat6"));
+        assertTrue(check("data/sat6"));
     }
 
     @Test
     public void testSat6bis() {
-        assertTrue(check("src/sat6bis"));
+        assertTrue(check("data/sat6bis"));
     }
 
     @Test
     public void testSat10() {
-        assertTrue(check("src/sat10"));
+        assertTrue(check("data/sat10"));
     }
 
     @Test
     public void testSat100() {
-        assertTrue(check("src/sat100"));
+        assertTrue(check("data/sat100"));
     }
 
     @Test
     public void testSat1000() {
-        assertTrue(check("src/sat1000"));
+        assertTrue(check("data/sat1000"));
     }
 
     @Test
     public void testSat10000() {
-        assertTrue(check("src/sat10000"));
+        assertTrue(check("data/sat10000"));
     }
 
     @Test
     public void testSat100000() {
-        assertTrue(check("src/sat100000"));
+        assertTrue(check("data/sat100000"));
     }
 
     @Test
     public void testUnsat6() {
-        assertFalse(check("src/unsat6"));
+        assertFalse(check("data/unsat6"));
     }
 
     @Test
     public void testUnsat20() {
-        assertFalse(check("src/unsat20"));
+        assertFalse(check("data/unsat20"));
     }
 
     @Test
     public void testUnsat1000() {
-        assertFalse(check("src/unsat1000"));
+        assertFalse(check("data/unsat1000"));
     }
 
     @Test
     public void testUnsat10000() {
-        assertFalse(check("src/unsat10000"));
+        assertFalse(check("data/unsat10000"));
     }
 }
